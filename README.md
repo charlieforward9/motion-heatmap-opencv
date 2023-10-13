@@ -2,7 +2,9 @@
 
 This is a simple script that harnesses the power of OpenCV to generate a heatmap reflecting motion within a video. By employing the MOG background subtractor, motion is detected and subsequently illustrated in a visually appealing heatmap.
 
-![](./sample.jpg)
+> **_NOTE:_** [Tutorial](tutorial.mp4) available to be guided through the installation and usage.
+
+![Sample mask output](./sample.jpg)
 _Sample mask output_
 
 ## Prerequisites
