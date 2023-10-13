@@ -1,3 +1,4 @@
+import sys
 import numpy as np
 import cv2
 import copy
@@ -6,7 +7,14 @@ from progress.bar import Bar
 
 
 def main():
-    capture = cv2.VideoCapture('input.mp4')
+    # Check if filename is provided
+    if len(sys.argv) < 2:
+        print("Please provide the relative path name of the video file: python motion_heatmap.py <filename>. ")
+        return
+    
+    filename = sys.argv[1]  # Get the filename from the command-line argument
+    capture = cv2.VideoCapture(filename)  # Step 2: Use the filename
+    
     background_subtractor = cv2.bgsegm.createBackgroundSubtractorMOG()
     length = int(capture.get(cv2.CAP_PROP_FRAME_COUNT))
 
