@@ -23,7 +23,7 @@ For the MOG background subtractor and a progress animation, execute:
 
 Using the command line, navigate to the directory in which you wish to store the script and run:
 
-`git clone https://github.com/your_username/motion-heatmap-opencv.git`
+`git clone https://github.com/charlieforward9/motion-heatmap-opencv.git`
 
 Navigate to the directory:
 
